@@ -1,0 +1,78 @@
+<html>
+    <script>
+        function checkboxes()
+
+        {
+
+        var firstName = document.getElementById("fName").value;
+        if(firstName == "")
+        {
+            window.alert("First Name, Last Name, Email, and Terms are Required");
+            document.getElementById("fName").style.backgroundColor = "red";
+            document.getElementById("fName").focus();
+    
+        }
+
+        var lastName = document.getElementById("lName").value;
+        if(lastName == "")
+        {
+            document.getElementById("lName").style.backgroundColor = "red";
+            document.getElementById("lName").focus();
+    
+        }
+
+        var Email = document.getElementById("eName").value;
+        if(Email == "")
+        {
+            document.getElementById("eName").style.backgroundColor = "red";
+            document.getElementById("eName").focus();
+        }
+        var agree = document.getElementById("agree").required;
+       
+        }
+    </script>
+  
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <style>
+        form{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+    </style>
+    
+    <style>
+        a{font-size: smaller;}
+    </style>
+     <style>
+        button{font-style: oblique;}
+        </style>
+        <title>My Third Page</title>
+    </head>
+    <body>
+    <h1>Contact Us</h1>
+    <h2 id="myID"> Fill Out The Information Below</h2>
+        
+        <form action="nextPage.html" type="POST">
+            First Name: <input type="text" id="fName"><br>
+            <br></br>
+            Last Name: <input type="text" id="lName"><br>
+            <br></br>
+            Email: <input type="text" id="eName"><br>
+            <br></br>
+            Accept Terms of Agreement:
+            Yes<input type="checkbox" id="mycheck" name= "test" required>
+            No<input type="checkbox" id="agree" onclick='checkbox();'> 
+            <br></br>
+            <button id="mySubmit" type="submit" onclick='checkboxes();'>Submit</button>
+        </form>
+        <br></br>
+    </body>
+    <div id="myID"> Thanks For Submiting!</div>
+</html>
+    </ol>
+
+    <a class="myclass" href="homepage.html"> Go to Homepage</a>
+    <br></br>
+    <a class="myclass" href="Secondpage.html"> Go to Second Page</a>
+   
+    </body>
+</html>
